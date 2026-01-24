@@ -12,6 +12,5 @@ require("servers.dockerls")(lspconfig, capabilities, on_attach)
 require("servers.clangd")(lspconfig, capabilities, on_attach)
 require("servers.emmet_ls")(lspconfig, capabilities, on_attach)
 require("servers.jsonls")(lspconfig, capabilities, on_attach)
-require("servers.rustls")(lspconfig, capabilities, on_attach)
 
 require("servers.efm-langserver")(lspconfig, capabilities, on_attach)

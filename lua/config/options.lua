@@ -45,7 +45,7 @@ vim.opt.redrawtime = 10000 -- Timeout for syntaz highlighting redraw
 vim.opt.maxmempattern = 20000 -- Max memory for pattern matching
 vim.opt.synmaxcol = 200 -- Syntax highlighting column limit
 
--- File handling 
+-- File handling
 vim.opt.backup = false -- Don't create backup files
 vim.opt.writebackup = false -- Don't backup before overwriting
 vim.opt.swapfile = false -- Don't create swap files
@@ -80,7 +80,6 @@ vim.opt.encoding = "UTF-8" -- Use UTF-8 encoding
 vim.opt.wildmenu = true -- Enable command-line completion menu
 vim.opt.wildmode = "longest:full,full" -- Completion mode for command line
 vim.opt.wildignorecase = true -- Case-insensitive tab completion in commands
-
 
 -- Cursor settings
 vim.opt.guicursor = {
