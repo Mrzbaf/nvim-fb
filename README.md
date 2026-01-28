@@ -29,13 +29,13 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 Then, clone the repository. Run:
 
 ```bash
-git clone https://github.com/Mrzbaf/nvim-fb.git --depth 1
+git clone https://github.com/Mrzbaf/nvim-fb.git ~/.config/nvim --depth 1
 ```
 
 Or If you have the SSH key (in which case you are me, Francisco), run:
 
 ```bash
-git clone git@github.com:Mrzbaf/nvim-fb.git --depth 1
+git clone git@github.com:Mrzbaf/nvim-fb.git ~/.config/nvim --depth 1
 ```
 
 The shallow clone option `bash --depth 1` will clone only the most recent commit, reducing
