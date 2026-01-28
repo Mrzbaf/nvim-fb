@@ -28,17 +28,17 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 
 Then, clone the repository. Run:
 
-```zsh
+```bash
 git clone https://github.com/Mrzbaf/nvim-fb.git --depth 1
 ```
 
 Or If you have the SSH key (in which case you are me, Francisco), run:
 
-```zsh
+```bash
 git clone git@github.com:Mrzbaf/nvim-fb.git --depth 1
 ```
 
-The shallow clone option `zsh --depth 1` will clone only the most recent commit, reducing
+The shallow clone option `bash --depth 1` will clone only the most recent commit, reducing
 download time and resources usage. It is optional.
 
 Adapt the backup and installation commands accordingly to your operating system. Finally, launch
@@ -83,13 +83,14 @@ Catch-all for helper functions, et cetera.
 
 - ~~Git integration~~
 - Full Dashboard configuration
-- Complete README file
-- Complete Rust installation using rustaceanvim
-- (IMPORTANT) Add descriptions to custom key-binds
+- Complete README file: Better description of Servers and Utils
+- ~~Complete Rust installation using rustaceanvim~~
+- ~~(IMPORTANT) Add descriptions to custom key-binds~~
 - Add languages support:
   - LaTeX
-  - Rust
+  - ~~Rust~~
   - R
 - Resolve key-bind conflicts with tmux
-- Learn how to implement pop-ups
+- ~~Learn how to implement pop-ups~~
 - (TEST) Use in an actual project
+- Find alternative themes/colorschemes
