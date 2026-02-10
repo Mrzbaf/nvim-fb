@@ -1,5 +1,4 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
--- local lspconfig = require("lspconfig") -- DEPRECATED
 
 require("servers.lua_ls")(capabilities)
 require("servers.ts_ls")(capabilities)

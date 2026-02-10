@@ -10,7 +10,7 @@ M.on_attach = function(event)
 	local opts = {
 		noremap = true, -- prevent non-recursive mapping
 		silent = true, -- don't print the command to the cli
-		buffer = bufnr, -- restrit the keymap to the local buffer number
+		buffer = bufnr, -- restrict the keymap to the local buffer number
 	}
 
 	-- native neovim keymaps
@@ -47,7 +47,7 @@ M.on_attach = function(event)
 			vim.defer_fn(function()
 				vim.lsp.buf.format({ bufnr = bufnr })
 			end, 50) -- slight delay to allow for the import to go first
-		end, opts)
+		end, vim.tbl_extend("force", opts, { desc = "Order imports" }))
 	end
 
 	-- DAP keymaps --
