@@ -1,7 +1,6 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("jsonls", {
+return function(capabilities)
+	vim.lsp.config("jsonls", {
 		capabilities = capabilities,
-		on_attach = on_attach,
 		filetypes = { "json", "jsonc" },
 	})
 end

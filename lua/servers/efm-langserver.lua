@@ -1,4 +1,4 @@
-return function(lspconfig, capabilities, on_attach)
+return function(capabilities)
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
 
@@ -23,8 +23,7 @@ return function(lspconfig, capabilities, on_attach)
 
 	-- local rust_analyzer = require("efmls-configs.linters.rust_analyzer") -- TODO: change to rustaceanvim
 
-	lspconfig("efm", {
-		on_attach = on_attach,
+	vim.lsp.config("efm", {
 		capabilities = capabilities,
 		filetypes = {
 			"c",

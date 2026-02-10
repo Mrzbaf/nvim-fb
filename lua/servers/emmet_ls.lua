@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("emmet_ls", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("emmet_ls", {
 		capabilities = capabilities,
 		filetypes = {
 			"css",

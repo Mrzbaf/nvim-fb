@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("lua_ls", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("lua_ls", {
 		capabilities = capabilities,
 		settings = {
 			Lua = {

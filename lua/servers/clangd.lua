@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("clangd", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("clangd", {
 		capabilities = capabilities,
 		cmd = {
 			"clangd",

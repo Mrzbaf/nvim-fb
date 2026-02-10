@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("dockerls", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("dockerls", {
 		capabilities = capabilities,
 		filetypes = { "dockerfile" },
 	})

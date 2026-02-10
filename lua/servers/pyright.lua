@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("pyright", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("pyright", {
 		capabilities = capabilities,
 		filetypes = { "python" },
 		settings = {

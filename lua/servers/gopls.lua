@@ -1,6 +1,5 @@
-return function(lspconfig, capabilities, on_attach)
-	lspconfig("gopls", {
-		on_attach = on_attach,
+return function(capabilities)
+	vim.lsp.config("gopls", {
 		capabilities = capabilities,
 		filetypes = { "go", "gomod" },
 	})

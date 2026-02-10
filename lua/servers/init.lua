@@ -1,16 +1,28 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-local on_attach = require("utils.lsp").on_attach
 -- local lspconfig = require("lspconfig") -- DEPRECATED
-local lspconfig = vim.lsp.config
 
-require("servers.lua_ls")(lspconfig, capabilities, on_attach)
-require("servers.ts_ls")(lspconfig, capabilities, on_attach)
-require("servers.pyright")(lspconfig, capabilities, on_attach)
-require("servers.gopls")(lspconfig, capabilities, on_attach)
-require("servers.bashls")(lspconfig, capabilities, on_attach)
-require("servers.dockerls")(lspconfig, capabilities, on_attach)
-require("servers.clangd")(lspconfig, capabilities, on_attach)
-require("servers.emmet_ls")(lspconfig, capabilities, on_attach)
-require("servers.jsonls")(lspconfig, capabilities, on_attach)
+require("servers.lua_ls")(capabilities)
+require("servers.ts_ls")(capabilities)
+require("servers.pyright")(capabilities)
+require("servers.gopls")(capabilities)
+require("servers.bashls")(capabilities)
+require("servers.dockerls")(capabilities)
+require("servers.clangd")(capabilities)
+require("servers.emmet_ls")(capabilities)
+require("servers.jsonls")(capabilities)
 
-require("servers.efm-langserver")(lspconfig, capabilities, on_attach)
+require("servers.efm-langserver")(capabilities)
+
+vim.lsp.enable({
+	"lua_ls",
+	"ts_ls",
+	"lua_ls",
+	"pyright",
+	"gopls",
+	"bashls",
+	"dockerls",
+	"clangd",
+	"emmet_ls",
+	"jsonls",
+	"efm",
+})
