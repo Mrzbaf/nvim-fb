@@ -94,3 +94,4 @@ Catch-all for helper functions, et cetera.
 - ~~Learn how to implement pop-ups~~
 - (TEST) Use in an actual project
 - Find alternative themes/colorschemes
+- Replace or eliminate codeium as turning obsolete
