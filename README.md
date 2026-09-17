@@ -5,7 +5,7 @@
 
 ## Requirements
 
-- Neovim 0.11.3+
+- Neovim 0.12.0+
 - A NerdFont
 - fzf
 - git
@@ -62,7 +62,7 @@ The package manager will take care of the rest.
 - nvim-cmp.lua
 - nvim-lspconfig.lua (our Language Server Protocol installation and diagnostics configuration)
 - nvim-tree.lua
-- treesitter.lua
+- nvim-treesitter.lua
 - vim-fugitive.lua
 - vim-tmux-navigator.lua (requires tmux to work)
 - webdev-icons.lua
