@@ -30,7 +30,7 @@ vim.opt.incsearch = true -- Show matches as you type
 -- Visual settings
 vim.opt.termguicolors = true -- Enable 24-bit colours
 vim.opt.signcolumn = "yes" -- Always show sign column
-vim.opt.colorcolumn = "100" -- Show column at 100 characters
+vim.opt.colorcolumn = "80,100" -- Show column at 80 and 100 characters
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 2 -- How long show matching brackets
 vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options
